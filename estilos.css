@@ -1,0 +1,78 @@
+body {
+    background-image: url(mdvmefeejg331.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+}
+
+.cabecera1 {
+    text-align: center;
+    max-width: 100%;
+}
+#logoprincipal{
+    margin-bottom: 10px;
+    margin-bottom: 0;
+    background-attachment: fixed;
+}
+
+#fraseinicial {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-style: italic;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 50px;
+}
+
+#menulista {
+    display: flex;
+    justify-content: center; /* Centra el menú dentro de su contenedor */
+    color: #ffee01;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#menulista ul {
+    display: flex; /* Coloca los elementos de la lista en una fila */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    padding: 0; /* Elimina el padding predeterminado del <ul> */
+    margin: 0; /* Elimina el margen predeterminado del <ul> */
+}
+
+#menulista ul li {
+    list-style-type: none; /* Quita las viñetas */
+    margin: 0 60px; /* Espaciado entre los elementos del menú */
+}
+
+#menulista ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #ffee01
+}
+
+#menulista ul li a:hover {
+    color: rgb(255, 255, 255); 
+}
+.social-icons {
+    border-top: 1px 20px solid #ccc;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaciado entre iconos y texto */
+    margin-bottom: 20px;
+}
+.social-icons img {
+    width: 50px;
+    margin-right: 10px; /* Espacio entre icono y nombre de red social */
+}

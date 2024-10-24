@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px ;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffee01;
+    height: 99px;
+}
+
+.logo img {
+    margin-left: 80px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    clip-path: inset(165px 25px 170px 25px );
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu ul li {
+    /*margin -left: 100px;*/
+    margin-right: 70px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-menu ul li a:hover {
+    color: #33abc0;
+}
+
+/* Estilos específicos para la página de menú */
+
+.columnas{
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.personajes{
+    justify-content: left;
+    background-color: #ffee01;
+    max-width: 200px;
+
+}
+
+.cuadrantes{
+    justify-content: right;
+    margin-left: 50px;
+}
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    
+}
+
+.menu-item {
+    width: 48%;
+    margin-bottom: 40px;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.menu-item p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+footer {
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+

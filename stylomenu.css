@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    background-image:url("C:\Users\aldon\Desktop\ep2 web\mdvmefeejg331.jpg") ;
+}
+
+/* Header y navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px ;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffee01;
+    height: 99px;
+}
+
+.logo img {
+    margin-left: 80px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    clip-path: inset(165px 25px 170px 25px );
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu ul li {
+    /*margin -left: 100px;*/
+    margin-right: 70px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.postcabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffee01;
+    height: 50px;
+}
+
+.textopost{
+    color: rgb(43, 182, 187);
+    text-align: right;
+    font-weight: 400;
+    text-decoration: none;
+}
+.main-menu ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Estilos específicos para la página de menú */
+
+.columnas{
+    display: flex;
+}
+
+.secondary-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.personajes{
+    justify-content: left;
+    background-color: #ffee01;
+    max-width: 200px;
+
+}
+
+.cuadrantes{
+    justify-content: right;
+    margin-left: 50px;
+}
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    
+}
+
+.menu-item {
+    width: 48%;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 20px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff6b6b;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+    }
+    
+    .main-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-menu ul li {
+        margin: 10px 0;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+}
+
